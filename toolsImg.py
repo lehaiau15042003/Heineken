@@ -88,8 +88,8 @@ def detect_and_draw_faces(image):
     print("Number of faces detected: ", num_faces)
     return img_rgb
 
-def main():
-    folder_path = "D:\Project\Heineken\FULL [Heineken Vietnam] Developer Resources"
+def count_faces():
+    folder_path = "FULL [Heineken Vietnam] Developer Resources"
     img_list = os.listdir(folder_path)
     
     while True:
