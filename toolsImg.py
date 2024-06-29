@@ -89,7 +89,7 @@ def detect_and_draw_faces(image):
     return img_rgb
 
 def main():
-    folder_path = "D:\Project\Heineken\[Heineken Vietnam] Developer Resources"
+    folder_path = "D:\Project\Heineken\FULL [Heineken Vietnam] Developer Resources"
     img_list = os.listdir(folder_path)
     
     while True:
