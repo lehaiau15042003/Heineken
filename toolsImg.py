@@ -27,8 +27,10 @@ def get_img_list(folder_path):
                 img_list.append(img)
     return img_list 
  
-def resize_image(image, size):
-    return cv2.resize(image, (size, size))
+def resize_image(image, width):
+    aspect_ratio = width / image.shape[1]
+    height = int(image.shape[0] * aspect_ratio)
+    return cv2.resize(image, (width, height))
 
 
 def normalize_image(image):
